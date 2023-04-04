@@ -1,0 +1,112 @@
+:root {
+    --primary-bg-color:#141e4c;
+    --secondary-bg-color:#fff;
+    --hover-color: #e0ae25;
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+    --button-color: #2bb686;
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+    --mobile-logo-height: 45px;
+  }
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+.welcome{
+    background-color: var(--bg-primary);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container .logo {
+    width: 150px;
+}
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+nav {
+	background-color: var(--primary-bg-color);
+	position: fixed;
+    top: 0;
+    z-index: 2;
+	width: 100%;
+}
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: var(--spacing-medium);
+}
+.nav-item:hover {
+    color: var(--hover-color);
+}
+ section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+section {
+    display: block;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.main-paragraph{
+    margin-left: var(--spacing-large);
+    margin-right: var(--spacing-large);
+}
+section h2 {
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    text-align: center;
+    padding-top: var(--spacing-large);
+    display: block;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+div {
+    display: block;
+}
+
+footer {
+    background-color: var(--bg-dark);
+}
+footer p {
+    font-size: var(--fs-small);
+    text-align: center;
+    color: var(--text-light);
+    padding: var(--spacing-medium) 0;
+}
+
+

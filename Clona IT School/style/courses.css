@@ -1,0 +1,76 @@
+
+
+.welcome-courses h1 {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 3.5rem;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.courses .microsoft-logo {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+.courses h2 {
+    padding-top: var(--spacing-large);
+}
+.main-paragraph {
+    text-align: center;
+}
+.courses-container .card {
+    margin: 5px;
+    }
+
+.card-body h3, .card-body .certification, .card-body .details, .card-body a {
+    margin-bottom: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+
+}
+
+.card span, .card .certification {
+    font-size: var(--fs-medium);
+    color: #666;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+      .courses-container{
+        flex-wrap: nowrap;
+      }
+}
+@media screen and (min-width:540px) and (max-width:720px) {
+    .card {
+        width: calc(70% / 3);
+    }
+    .main-paragraph {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (min-width:820px) and (max-width:1280px){
+    .courses-container  {
+        flex-wrap: nowrap;
+    }
+}
+.card{
+    width: 25rem;
+}
+.card a {
+    font-size: var(--fs-medium);
+    text-align: center;
+    color: var(--text-white);
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+    width: 100px;
+    text-decoration: none;
+}
+a {
+    display: block;
+}

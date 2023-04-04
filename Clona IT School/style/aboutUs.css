@@ -1,0 +1,48 @@
+
+.trainers-container {
+    padding-bottom: var(--spacing-large);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 10px;
+}
+
+:root {
+	--width: 120px;
+	--height: 120px;
+}
+.img-card img {
+	width: var(--width);
+	height: var(--height);
+	border-radius: 50%;
+	position: absolute;
+	top: calc(var(--width) / 2 * -1);
+	left: calc(50% - var(--height) / 2);
+    filter: grayscale(100%);
+}
+
+.card {
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.card-body h3 {
+    width: 100%;
+    font-size: var(--fs-large);
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(20, 30, 76, 0.9);
+    border-radius: 5px;
+    margin-top: 26px;
+    margin-bottom: var(--spacing-medium);
+    padding: var(--spacing-tiny) 0;;
+    color: var(--text-secondary);
+    position: relative;
+    z-index:1;
+}
+.trainers-container .card {
+    width: 25%;
+    padding: 0 var(--spacing-small);
+}
